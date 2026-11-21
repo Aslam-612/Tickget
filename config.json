@@ -1,9 +1,22 @@
 {
-  "detector": "venue_date",
   "movie": "Avengers: Doomsday",
   "requested_date": "20261217",
-  "venue_code": ["RAKK","PCAN","PVES","PVPZ","PVSR","DMAC","INPR"],
-  "venue_label": "Multiple theatres in chennai",
-  "url_template": "https://in.bookmyshow.com/movies/chennai/avengers-doomsday/buytickets/ET00526306/20261217",
-  "min_references": 10
+
+  "detector": "venue_date",
+  "venue_codes": [
+    "RAKK",
+    "PCAN",
+    "PVES",
+    "PVPZ",
+    "PVSR",
+    "DMAC",
+    "INPR"
+  ],
+  "venue_label": "Multiple theatres in Chennai",
+
+  "url_template": "https://in.bookmyshow.com/movies/chennai/avengers-doomsday/buytickets/ET00526306/{date}?etCodes=*&language=english&refEventCode=ET00526306",
+
+  "district_api_url": "https://www.district.in/gw/consumer/movies/v1/movie/sessions?version=3&site_id=1&channel=ANDROIDAPPINSIDER&child_site_id=1&platform=district&movieCode=Mm5dpqTqJz&city_key=chennai&content_id=176735&latitude=13.062544&longitude=80.274248&cinemaOrderLogic=3",
+
+  "district_booking_url": "https://www.district.in/movies/avengers-doomsday-movie-tickets-in-chennai-MV176735?frmtid=Mm5dpqTqJz"
 }
