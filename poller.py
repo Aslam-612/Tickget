@@ -267,22 +267,41 @@ def get_available_seats(session):
     )
 
 
+
 def detect_district_sessions(data, cfg):
     requested_date = cfg["requested_date"]
     alerts = []
+
+    # Only monitor theatres listed in config.json.
+    selected_theatres = [
+        name.strip().lower()
+        for name in cfg.get("district_theatres", [])
+        if name.strip()
+    ]
+
+    if not selected_theatres:
+        print("[District] No theatres configured.")
+        return alerts
 
     cinemas = find_cinema_entries(data)
 
     for cinema in cinemas:
         cinema_info = cinema.get("cinemaInfo", {})
         cinema_name = cinema_info.get("name", "Unknown theatre")
+        cinema_name_lower = cinema_name.lower()
+
+        # Case-insensitive partial name matching.
+        if not any(
+            selected in cinema_name_lower
+            for selected in selected_theatres
+        ):
+            continue
 
         for session in cinema.get("sessions", []):
             if session.get("showDate") != requested_date:
                 continue
 
-            language = session.get("lang", "").strip().lower()
-            if language != "english":
+            if session.get("lang", "").strip().lower() != "english":
                 continue
 
             available = get_available_seats(session)
@@ -299,6 +318,7 @@ def detect_district_sessions(data, cfg):
             })
 
     return alerts
+
 
 
 # --------------------------------------------------
