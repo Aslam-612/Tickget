@@ -130,7 +130,7 @@ if response.status_code != 200:
     print(f"[District] Response: {response.text[:1000]}")
     print(f"[District] Server: {response.headers.get('server')}")
     print(f"[District] Content-Type: {response.headers.get('content-type')}")
-    return None
+return None
 
 
 # --------------------------------------------------
