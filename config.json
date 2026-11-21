@@ -18,5 +18,9 @@
 
   "district_api_url": "https://www.district.in/gw/consumer/movies/v1/movie/sessions?version=3&site_id=1&channel=ANDROIDAPPINSIDER&child_site_id=1&platform=district&movieCode=Mm5dpqTqJz&city_key=chennai&content_id=176735&latitude=13.062544&longitude=80.274248&cinemaOrderLogic=3",
 
-  "district_booking_url": "https://www.district.in/movies/avengers-doomsday-movie-tickets-in-chennai-MV176735?frmtid=Mm5dpqTqJz"
+  "district_booking_url": "https://www.district.in/movies/avengers-doomsday-movie-tickets-in-chennai-MV176735?frmtid=Mm5dpqTqJz",
+
+  "district_theatres": [
+    "Vettri Theatres RGB Laser"
+  ]
 }
