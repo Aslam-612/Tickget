@@ -1,5 +1,5 @@
 {
-  "detector": "venue_date",
+  "detector": "venue_dates",
   "movie": "Avengers: Doomsday",
   "requested_date": "20261217",
   "venue_codes": ["PCAN","PVES","PVPZ","PVSR","DMAC","INPR","ACTN","AGSM","PABC","INCH","FMCN","GCRP","GKCP","PVHC"],
