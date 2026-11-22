@@ -2,7 +2,7 @@
   "detector": "venue_date",
   "movie": "Avengers: Doomsday",
   "requested_date": "20261217",
-  "venue_codes": ["RAKK","PCAN","PVES","PVPZ","PVSR","DMAC","INPR","ACTN","AGSM","PABC","INCH","FMCN","GCRP","GKCP","PVHC"],
+  "venue_codes": ["PCAN","PVES","PVPZ","PVSR","DMAC","INPR","ACTN","AGSM","PABC","INCH","FMCN","GCRP","GKCP","PVHC"],
   "venue_label": "Multiple theatres in chennai",
   "url_template": "https://in.bookmyshow.com/movies/chennai/avengers-doomsday/buytickets/ET00526306/20261217",
   "min_references": 10
